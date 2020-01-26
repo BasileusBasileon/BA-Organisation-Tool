@@ -5,10 +5,160 @@
     xmlns:local="using:BA_Organisation_Tool"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:media="using:Microsoft.Toolkit.Uwp.UI.Media"
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="#121212">
 
-    <Grid>
+	<Grid>
+		<Grid.RowDefinitions>
+			<!-- Picture and Title -->
+			<RowDefinition Height="278" />
+			<RowDefinition Height="68" />
+			<RowDefinition Height="115" />
 
-    </Grid>
+			<RowDefinition Height="1*" />
+			<!-- Subtitle -->
+			<RowDefinition Height="45" />
+			<RowDefinition Height="45" />
+			<!-- Widget Row-->
+			<RowDefinition Height="150" />
+			<RowDefinition Height="47" />
+			<!-- Widget Row-->
+			<RowDefinition Height="150" />
+			<RowDefinition Height="1*" />
+			<RowDefinition Height="40" />
+		</Grid.RowDefinitions>
+
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="1*" />
+
+			<ColumnDefinition Width="150" />
+			<ColumnDefinition Width="65" />
+			<ColumnDefinition Width="150" />
+			<ColumnDefinition Width="65" />
+			<ColumnDefinition Width="150" />
+
+			<ColumnDefinition Width="1*" />
+		</Grid.ColumnDefinitions>
+
+		<Image Grid.Row="0" Grid.RowSpan="3" Grid.ColumnSpan="7"/>
+		<controls:DropShadowPanel Grid.Row="1" Grid.ColumnSpan="7" VerticalAlignment="Center" HorizontalAlignment="Center"
+                                  OffsetX="0" OffsetY="-10" BlurRadius="10" Color="#000000" ShadowOpacity="0.7">
+			<TextBlock Text="Eurekan Academy" FontFamily="Assets/Fonts/Jupiter Pro Regular.otf#Jupiter Pro" FontSize="72px" LineHeight="68" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#FFF1A5">
+            <!--<TextBlock.Foreground>
+                <media:RadialGradientBrush
+                    GradientOrigin="">
+                    
+                </media:RadialGradientBrush>
+            </TextBlock.Foreground>-->
+			</TextBlock>
+		</controls:DropShadowPanel>
+		<controls:DropShadowPanel Grid.Row="4" Grid.ColumnSpan="7" VerticalAlignment="Center" HorizontalAlignment="Center"
+                                  OffsetX="0" OffsetY="10" BlurRadius="10" Color="#000000" ShadowOpacity="0.7">
+			<TextBlock Text="BA Management" FontFamily="Assets/Fonts/Raleway Regular.ttf#Raleway" FontSize="38px" LineHeight="45" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center" />
+		</controls:DropShadowPanel>
+
+		<controls:DropShadowPanel Grid.Column="1" Grid.Row="6" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch"
+                                  OffsetX="0" OffsetY="10" BlurRadius="10" Color="#000000" ShadowOpacity="0.7">
+			<Button  VerticalAlignment="Stretch" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" 
+			   Background="#272525" Padding="0" CornerRadius="5" >
+				<Grid>
+					<Grid.RowDefinitions>
+						<RowDefinition Height="33" />
+						<RowDefinition Height="37" />
+						<RowDefinition Height="33" />
+						<RowDefinition Height="26" />
+					</Grid.RowDefinitions>
+
+					<TextBlock Grid.Row="3" Text="All runs" FontFamily="Assets/Fonts/Raleway Regular.ttf#Raleway" FontSize="22px" LineHeight="26" HorizontalAlignment="Center" />
+				</Grid>
+			</Button>
+		</controls:DropShadowPanel>
+		<controls:DropShadowPanel Grid.Column="3" Grid.Row="6" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch"
+                                  OffsetX="0" OffsetY="10" BlurRadius="10" Color="#000000" ShadowOpacity="0.7">
+			<Button  VerticalAlignment="Stretch" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" 
+			   Background="#272525" Padding="0" CornerRadius="5" >
+				<Grid>
+					<Grid.RowDefinitions>
+						<RowDefinition Height="33" />
+						<RowDefinition Height="37" />
+						<RowDefinition Height="33" />
+						<RowDefinition Height="26" />
+					</Grid.RowDefinitions>
+
+					<TextBlock Grid.Row="3" Text="Current run" FontFamily="Assets/Fonts/Raleway Regular.ttf#Raleway" FontSize="22px" LineHeight="26" HorizontalAlignment="Center" />
+				</Grid>
+			</Button>
+		</controls:DropShadowPanel>
+		<controls:DropShadowPanel Grid.Column="5" Grid.Row="6" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch"
+                                  OffsetX="0" OffsetY="10" BlurRadius="10" Color="#000000" ShadowOpacity="0.7">
+			<Button  VerticalAlignment="Stretch" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" 
+			   Background="#272525" Padding="0" CornerRadius="5" >
+				<Grid>
+					<Grid.RowDefinitions>
+						<RowDefinition Height="33" />
+						<RowDefinition Height="37" />
+						<RowDefinition Height="33" />
+						<RowDefinition Height="26" />
+					</Grid.RowDefinitions>
+
+					<TextBlock Grid.Row="3" Text="Search" FontFamily="Assets/Fonts/Raleway Regular.ttf#Raleway" FontSize="22px" LineHeight="26" HorizontalAlignment="Center" />
+				</Grid>
+			</Button>
+		</controls:DropShadowPanel>
+		<controls:DropShadowPanel Grid.Column="1" Grid.Row="8" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch"
+                                  OffsetX="0" OffsetY="10" BlurRadius="10" Color="#000000" ShadowOpacity="0.7">
+			<Button  VerticalAlignment="Stretch" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" 
+			   Background="#272525" Padding="0" CornerRadius="5" >
+				<Grid>
+					<Grid.RowDefinitions>
+						<RowDefinition Height="33" />
+						<RowDefinition Height="37" />
+						<RowDefinition Height="33" />
+						<RowDefinition Height="26" />
+					</Grid.RowDefinitions>
+
+					<TextBlock Grid.Row="3" Text="Stats" FontFamily="Assets/Fonts/Raleway Regular.ttf#Raleway" FontSize="22px" LineHeight="26" HorizontalAlignment="Center" />
+				</Grid>
+			</Button>
+		</controls:DropShadowPanel>
+		<controls:DropShadowPanel Grid.Column="3" Grid.Row="8" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch"
+                                  OffsetX="0" OffsetY="10" BlurRadius="10" Color="#000000" ShadowOpacity="0.7">
+			<Button  VerticalAlignment="Stretch" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" 
+			   Background="#272525" Padding="0" CornerRadius="5" >
+				<Grid>
+					<Grid.RowDefinitions>
+						<RowDefinition Height="33" />
+						<RowDefinition Height="37" />
+						<RowDefinition Height="33" />
+						<RowDefinition Height="26" />
+					</Grid.RowDefinitions>
+
+					<TextBlock Grid.Row="3" Text="Player lists" FontFamily="Assets/Fonts/Raleway Regular.ttf#Raleway" FontSize="22px" LineHeight="26" HorizontalAlignment="Center" />
+				</Grid>
+			</Button>
+		</controls:DropShadowPanel>
+		<controls:DropShadowPanel Grid.Column="5" Grid.Row="8" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch"
+                                  OffsetX="0" OffsetY="10" BlurRadius="10" Color="#000000" ShadowOpacity="0.7">
+			<Button  VerticalAlignment="Stretch" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" 
+			   Background="#272525" Padding="0" CornerRadius="5" >
+				<Grid>
+					<Grid.RowDefinitions>
+						<RowDefinition Height="33" />
+						<RowDefinition Height="37" />
+						<RowDefinition Height="33" />
+						<RowDefinition Height="26" />
+					</Grid.RowDefinitions>
+
+					<TextBlock Grid.Row="3" Text="Leaders hub" FontFamily="Assets/Fonts/Raleway Regular.ttf#Raleway" FontSize="22px" LineHeight="26" HorizontalAlignment="Center" />
+				</Grid>
+			</Button>
+		</controls:DropShadowPanel>
+
+		<Frame Grid.Row="10" Grid.ColumnSpan="7" Background="#272525">
+			<TextBlock Text="FINAL FANTASY XIV ©2010 - 2020 SQUARE ENIX CO., LTD. FINAL FANTASY is a registered trademark of Square Enix Holdings Co., Ltd. All material used under license." 
+					   FontFamily="Assets/Fonts/Raleway Regular.ttf#Raleway" FontSize="14px" LineHeight="16" Foreground="#4F4F4F" Width="673" TextWrapping="WrapWholeWords" HorizontalAlignment="Left" VerticalAlignment="Center" />
+		</Frame>
+	</Grid>
 </Page>
