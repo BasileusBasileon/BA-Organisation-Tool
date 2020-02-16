@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BA_Organisation_Tool.Models;
+using BA_Organisation_Tool.Pages;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -25,6 +27,12 @@ namespace BA_Organisation_Tool
         public MainPage()
         {
             this.InitializeComponent();
+        }
+
+        private void CurrentRun_Click(object sender, RoutedEventArgs e)
+        {
+            Frame rootFrame = Window.Current.Content as Frame;
+            rootFrame.Navigate(typeof(RunDetailPage), BARun.CreateSample());
         }
     }
 }

@@ -17,7 +17,7 @@
 			<RowDefinition Height="68" />
 			<RowDefinition Height="115" />
 
-			<RowDefinition Height="1*" />
+			<RowDefinition Height="29" />
 			<!-- Subtitle -->
 			<RowDefinition Height="45" />
 			<RowDefinition Height="45" />
@@ -42,7 +42,7 @@
 			<ColumnDefinition Width="1*" />
 		</Grid.ColumnDefinitions>
 
-		<Image Grid.Row="0" Grid.RowSpan="3" Grid.ColumnSpan="7"/>
+		<Image Grid.Row="0" Grid.RowSpan="3" Grid.ColumnSpan="7" Source="Assets/Images/Rectangle_1.png" Stretch="UniformToFill" />
 		<controls:DropShadowPanel Grid.Row="1" Grid.ColumnSpan="7" VerticalAlignment="Center" HorizontalAlignment="Center"
                                   OffsetX="0" OffsetY="-10" BlurRadius="10" Color="#000000" ShadowOpacity="0.7">
 			<TextBlock Text="Eurekan Academy" FontFamily="Assets/Fonts/Jupiter Pro Regular.otf#Jupiter Pro" FontSize="72px" LineHeight="68" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#FFF1A5">
@@ -71,6 +71,7 @@
 						<RowDefinition Height="26" />
 					</Grid.RowDefinitions>
 
+					<Image Source="Assets/Icons/Table light.png" Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Center" />
 					<TextBlock Grid.Row="3" Text="All runs" FontFamily="Assets/Fonts/Raleway Regular.ttf#Raleway" FontSize="22px" LineHeight="26" HorizontalAlignment="Center" />
 				</Grid>
 			</Button>
@@ -78,7 +79,7 @@
 		<controls:DropShadowPanel Grid.Column="3" Grid.Row="6" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch"
                                   OffsetX="0" OffsetY="10" BlurRadius="10" Color="#000000" ShadowOpacity="0.7">
 			<Button  VerticalAlignment="Stretch" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" 
-			   Background="#272525" Padding="0" CornerRadius="5" >
+			   Background="#272525" Padding="0" CornerRadius="5" Click="CurrentRun_Click" >
 				<Grid>
 					<Grid.RowDefinitions>
 						<RowDefinition Height="33" />
@@ -87,6 +88,7 @@
 						<RowDefinition Height="26" />
 					</Grid.RowDefinitions>
 
+					<Image Source="Assets/Icons/Lists dark.png" Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Center" />
 					<TextBlock Grid.Row="3" Text="Current run" FontFamily="Assets/Fonts/Raleway Regular.ttf#Raleway" FontSize="22px" LineHeight="26" HorizontalAlignment="Center" />
 				</Grid>
 			</Button>
@@ -103,6 +105,7 @@
 						<RowDefinition Height="26" />
 					</Grid.RowDefinitions>
 
+					<Image Source="Assets/Icons/Search dark.png" Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Center" />
 					<TextBlock Grid.Row="3" Text="Search" FontFamily="Assets/Fonts/Raleway Regular.ttf#Raleway" FontSize="22px" LineHeight="26" HorizontalAlignment="Center" />
 				</Grid>
 			</Button>
@@ -119,6 +122,7 @@
 						<RowDefinition Height="26" />
 					</Grid.RowDefinitions>
 
+					<Image Source="Assets/Icons/Stats dark.png" Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Center" />
 					<TextBlock Grid.Row="3" Text="Stats" FontFamily="Assets/Fonts/Raleway Regular.ttf#Raleway" FontSize="22px" LineHeight="26" HorizontalAlignment="Center" />
 				</Grid>
 			</Button>
@@ -135,6 +139,7 @@
 						<RowDefinition Height="26" />
 					</Grid.RowDefinitions>
 
+					<Image Source="Assets/Icons/Players dark.png" Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Center" />
 					<TextBlock Grid.Row="3" Text="Player lists" FontFamily="Assets/Fonts/Raleway Regular.ttf#Raleway" FontSize="22px" LineHeight="26" HorizontalAlignment="Center" />
 				</Grid>
 			</Button>
@@ -151,6 +156,7 @@
 						<RowDefinition Height="26" />
 					</Grid.RowDefinitions>
 
+					<Image Source="Assets/Icons/Academy dark.png" Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Center" />
 					<TextBlock Grid.Row="3" Text="Leaders hub" FontFamily="Assets/Fonts/Raleway Regular.ttf#Raleway" FontSize="22px" LineHeight="26" HorizontalAlignment="Center" />
 				</Grid>
 			</Button>

@@ -1,0 +1,233 @@
+﻿<UserControl
+    x:Class="BA_Organisation_Tool.Controls.RunGrid"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BA_Organisation_Tool.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="360"
+    d:DesignWidth="1076">
+
+	<Grid Height="360" Width="1076">
+		<Grid.RowDefinitions>
+			<!--Header-->
+			<RowDefinition Height="*" />
+			<!--People-->
+			<RowDefinition Height="*" />
+			<RowDefinition Height="*" />
+			<RowDefinition Height="*" />
+			<RowDefinition Height="*" />
+			<RowDefinition Height="*" />
+			<RowDefinition Height="*" />
+			<RowDefinition Height="*" />
+			<RowDefinition Height="*" />
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<!--Groups-->
+			<ColumnDefinition Width="*" />
+			<ColumnDefinition Width="*" />
+			<ColumnDefinition Width="*" />
+			<ColumnDefinition Width="*" />
+			<ColumnDefinition Width="*" />
+			<ColumnDefinition Width="*" />
+			<!--Seperator-->
+			<ColumnDefinition Width="26" />
+			<!--Support-->
+			<ColumnDefinition Width="*" />
+
+		</Grid.ColumnDefinitions>
+
+		<Frame Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Background="#373636" BorderBrush="#514343" BorderThickness="1">
+			<TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="MAGIA / OWAIN" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#D3D3D3" FontSize="18"/>
+		</Frame>
+		<Frame Grid.Row="0" Grid.Column="3" Grid.ColumnSpan="3" Background="#373636" BorderBrush="#514343" BorderThickness="1">
+			<TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="LOGOS / ART" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#D3D3D3" FontSize="18"/>
+		</Frame>
+		<Frame Grid.Row="0" Grid.Column="7" Grid.ColumnSpan="1" Background="#373636" BorderBrush="#514343" BorderThickness="1">
+			<TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="SUPPORT" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#D3D3D3" FontSize="18"/>
+		</Frame>
+
+		<!--Magia 1-->
+		<Button x:Name="Magia10Button" Grid.Row="1" Grid.Column="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellBlue}" BorderBrush="White" BorderThickness="1">
+			<TextBlock x:Name="Magia11Text" HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+		<Button x:Name="Magia11Button" Grid.Row="2" Grid.Column="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellGreen}" BorderBrush="White" BorderThickness="1">
+			<TextBlock HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+		<Button x:Name="Magia12Button" Grid.Row="3" Grid.Column="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellGreen}" BorderBrush="White" BorderThickness="1">
+			<TextBlock HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+		<Button x:Name="Magia13Button" Grid.Row="4" Grid.Column="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellRed}" BorderBrush="White" BorderThickness="1">
+			<TextBlock HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+		<Button x:Name="Magia14Button" Grid.Row="5" Grid.Column="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellRed}" BorderBrush="White" BorderThickness="1">
+			<TextBlock HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+		<Button x:Name="Magia15Button" Grid.Row="6" Grid.Column="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellRed}" BorderBrush="White" BorderThickness="1">
+			<TextBlock HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+		<Button x:Name="Magia16Button" Grid.Row="7" Grid.Column="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellRed}" BorderBrush="White" BorderThickness="1">
+			<TextBlock HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+		<Button x:Name="Magia17Button" Grid.Row="8" Grid.Column="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellRed}" BorderBrush="White" BorderThickness="1">
+			<TextBlock HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+
+		<!--Magia 2-->
+		<Button x:Name="Magia20Button" Grid.Row="1" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellBlue}" BorderBrush="White" BorderThickness="1">
+			<TextBlock HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+		<Button x:Name="Magia21Button" Grid.Row="2" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellGreen}" BorderBrush="White" BorderThickness="1">
+			<TextBlock HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+		<Button x:Name="Magia22Button" Grid.Row="3" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellGreen}" BorderBrush="White" BorderThickness="1">
+			<TextBlock HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+		<Button x:Name="Magia23Button" Grid.Row="4" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellRed}" BorderBrush="White" BorderThickness="1">
+			<TextBlock HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+		<Button x:Name="Magia24Button" Grid.Row="5" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellRed}" BorderBrush="White" BorderThickness="1">
+			<TextBlock HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+		<Button x:Name="Magia25Button" Grid.Row="6" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellRed}" BorderBrush="White" BorderThickness="1">
+			<TextBlock HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+		<Button x:Name="Magia26Button" Grid.Row="7" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellRed}" BorderBrush="White" BorderThickness="1">
+			<TextBlock HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+		<Button x:Name="Magia27Button" Grid.Row="8" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellRed}" BorderBrush="White" BorderThickness="1">
+			<TextBlock HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+
+		<!--Magia 3-->
+		<Button x:Name="Magia30Button" Grid.Row="1" Grid.Column="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellBlue}" BorderBrush="White" BorderThickness="1">
+			<TextBlock HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+		<Button x:Name="Magia31Button" Grid.Row="2" Grid.Column="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellGreen}" BorderBrush="White" BorderThickness="1">
+			<TextBlock HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+		<Button x:Name="Magia32Button" Grid.Row="3" Grid.Column="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellGreen}" BorderBrush="White" BorderThickness="1">
+			<TextBlock HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+		<Button x:Name="Magia33Button" Grid.Row="4" Grid.Column="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellRed}" BorderBrush="White" BorderThickness="1">
+			<TextBlock HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+		<Button x:Name="Magia34Button" Grid.Row="5" Grid.Column="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellRed}" BorderBrush="White" BorderThickness="1">
+			<TextBlock HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+		<Button x:Name="Magia35Button" Grid.Row="6" Grid.Column="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellRed}" BorderBrush="White" BorderThickness="1">
+			<TextBlock HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+		<Button x:Name="Magia36Button" Grid.Row="7" Grid.Column="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellRed}" BorderBrush="White" BorderThickness="1">
+			<TextBlock HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+		<Button x:Name="Magia37Button" Grid.Row="8" Grid.Column="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellRed}" BorderBrush="White" BorderThickness="1">
+			<TextBlock HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+
+		<!--Logos 1-->
+		<Button x:Name="Logos10Button" Grid.Row="1" Grid.Column="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellBlue}" BorderBrush="White" BorderThickness="1">
+			<TextBlock HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+		<Button x:Name="Logos11Button" Grid.Row="2" Grid.Column="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellGreen}" BorderBrush="White" BorderThickness="1">
+			<TextBlock HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+		<Button x:Name="Logos12Button" Grid.Row="3" Grid.Column="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellGreen}" BorderBrush="White" BorderThickness="1">
+			<TextBlock HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+		<Button x:Name="Logos13Button" Grid.Row="4" Grid.Column="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellRed}" BorderBrush="White" BorderThickness="1">
+			<TextBlock HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+		<Button x:Name="Logos14Button" Grid.Row="5" Grid.Column="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellRed}" BorderBrush="White" BorderThickness="1">
+			<TextBlock HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+		<Button x:Name="Logos15Button" Grid.Row="6" Grid.Column="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellRed}" BorderBrush="White" BorderThickness="1">
+			<TextBlock HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+		<Button x:Name="Logos16Button" Grid.Row="7" Grid.Column="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellRed}" BorderBrush="White" BorderThickness="1">
+			<TextBlock HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+		<Button x:Name="Logos17Button" Grid.Row="8" Grid.Column="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellRed}" BorderBrush="White" BorderThickness="1">
+			<TextBlock HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+
+		<!--Logos 2-->
+		<Button x:Name="Logos20Button" Grid.Row="1" Grid.Column="4" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellBlue}" BorderBrush="White" BorderThickness="1">
+			<TextBlock HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+		<Button x:Name="Logos21Button" Grid.Row="2" Grid.Column="4" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellGreen}" BorderBrush="White" BorderThickness="1">
+			<TextBlock HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+		<Button x:Name="Logos22Button" Grid.Row="3" Grid.Column="4" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellGreen}" BorderBrush="White" BorderThickness="1">
+			<TextBlock HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+		<Button x:Name="Logos23Button" Grid.Row="4" Grid.Column="4" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellRed}" BorderBrush="White" BorderThickness="1">
+			<TextBlock HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+		<Button x:Name="Logos24Button" Grid.Row="5" Grid.Column="4" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellRed}" BorderBrush="White" BorderThickness="1">
+			<TextBlock HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+		<Button x:Name="Logos25Button" Grid.Row="6" Grid.Column="4" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellRed}" BorderBrush="White" BorderThickness="1">
+			<TextBlock HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+		<Button x:Name="Logos26Button" Grid.Row="7" Grid.Column="4" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellRed}" BorderBrush="White" BorderThickness="1">
+			<TextBlock HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+		<Button x:Name="Logos27Button" Grid.Row="8" Grid.Column="4" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellRed}" BorderBrush="White" BorderThickness="1">
+			<TextBlock HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+
+		<!--Logos 3-->
+		<Button x:Name="Logos30Button" Grid.Row="1" Grid.Column="5" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellBlue}" BorderBrush="White" BorderThickness="1">
+			<TextBlock HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+		<Button x:Name="Logos31Button" Grid.Row="2" Grid.Column="5" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellGreen}" BorderBrush="White" BorderThickness="1">
+			<TextBlock HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+		<Button x:Name="Logos32Button" Grid.Row="3" Grid.Column="5" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellGreen}" BorderBrush="White" BorderThickness="1">
+			<TextBlock HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+		<Button x:Name="Logos33Button" Grid.Row="4" Grid.Column="5" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellRed}" BorderBrush="White" BorderThickness="1">
+			<TextBlock HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+		<Button x:Name="Logos34Button" Grid.Row="5" Grid.Column="5" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellRed}" BorderBrush="White" BorderThickness="1">
+			<TextBlock HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+		<Button x:Name="Logos35Button" Grid.Row="6" Grid.Column="5" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellRed}" BorderBrush="White" BorderThickness="1">
+			<TextBlock HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+		<Button x:Name="Logos36Button" Grid.Row="7" Grid.Column="5" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellRed}" BorderBrush="White" BorderThickness="1">
+			<TextBlock HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+		<Button x:Name="Logos37Button" Grid.Row="8" Grid.Column="5" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellRed}" BorderBrush="White" BorderThickness="1">
+			<TextBlock HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+
+		<!--Support-->
+		<Button x:Name="Support0Button" Grid.Row="1" Grid.Column="7" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellBlue}" BorderBrush="White" BorderThickness="1">
+			<TextBlock HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+		<Button x:Name="Support1Button" Grid.Row="2" Grid.Column="7" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellGreen}" BorderBrush="White" BorderThickness="1">
+			<TextBlock HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+		<Button x:Name="Support2Button" Grid.Row="3" Grid.Column="7" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellGreen}" BorderBrush="White" BorderThickness="1">
+			<TextBlock HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+		<Button x:Name="Support3Button" Grid.Row="4" Grid.Column="7" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellRed}" BorderBrush="White" BorderThickness="1">
+			<TextBlock HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+		<Button x:Name="Support4Button" Grid.Row="5" Grid.Column="7" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellRed}" BorderBrush="White" BorderThickness="1">
+			<TextBlock HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+		<Button x:Name="Support5Button" Grid.Row="6" Grid.Column="7" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellRed}" BorderBrush="White" BorderThickness="1">
+			<TextBlock HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+		<Button x:Name="Support6Button" Grid.Row="7" Grid.Column="7" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellRed}" BorderBrush="White" BorderThickness="1">
+			<TextBlock HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+		<Button x:Name="Support7Button" Grid.Row="8" Grid.Column="7" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Background="{StaticResource CellRed}" BorderBrush="White" BorderThickness="1">
+			<TextBlock HorizontalAlignment="Center" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" Foreground="#000000" FontSize="14"/>
+		</Button>
+	</Grid>
+</UserControl>

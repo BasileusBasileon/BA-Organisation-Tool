@@ -1,0 +1,137 @@
+﻿<Page
+    x:Class="BA_Organisation_Tool.Pages.RunDetailPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BA_Organisation_Tool.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:c="using:BA_Organisation_Tool.Controls"
+	xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+	mc:Ignorable="d"
+    Background="#121212">
+
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="126" />
+			<RowDefinition Height="53" />
+			<RowDefinition Height="47" />
+			<RowDefinition Height="54" />
+			<RowDefinition Height="*" />
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="55" />
+			<ColumnDefinition Width="306" />
+			<ColumnDefinition Width="*" />
+		</Grid.ColumnDefinitions>
+
+		<Image Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="3" Source="../Assets/Images/Rectangle_1.png" Stretch="UniformToFill" />
+
+		<controls:DropShadowPanel Grid.Row="1" Grid.RowSpan="2" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch"
+                                  OffsetX="0" OffsetY="10" BlurRadius="10" Color="#000000" ShadowOpacity="0.7" >
+
+			<Frame Grid.Row="1" Grid.RowSpan="2" Grid.Column="1" Background="#272525" CornerRadius="20">
+
+			</Frame>
+		</controls:DropShadowPanel>
+
+		<ScrollViewer Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3">
+			<Grid>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="360" />
+					<RowDefinition Height="*" />
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="263" />
+					<ColumnDefinition Width="*" />
+				</Grid.ColumnDefinitions>
+
+				<c:RunGrid HorizontalAlignment="Left" Grid.Column="1"/>
+
+				<Grid Width="1076" HorizontalAlignment="Left" Grid.Row="1" Grid.Column="1" Margin="0,20,0,0" >
+					<Grid.RowDefinitions>
+						<RowDefinition Height="Auto" MinHeight="30" />
+						<RowDefinition Height="Auto" MinHeight="30" />
+						<RowDefinition Height="Auto" MinHeight="30" />
+						<RowDefinition Height="Auto" MinHeight="30" />
+						<RowDefinition Height="Auto" MinHeight="30" />
+						<RowDefinition Height="Auto" MinHeight="30" />
+						<RowDefinition Height="Auto" MinHeight="30" />
+						<RowDefinition Height="Auto" MinHeight="30" />
+						<RowDefinition Height="Auto" MinHeight="30" />
+						<RowDefinition Height="Auto" MinHeight="30" />
+					</Grid.RowDefinitions>
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="30" />
+						<ColumnDefinition Width="Auto" />
+						<ColumnDefinition Width="*" />
+					</Grid.ColumnDefinitions>
+
+					<!--Headers-->
+					<Frame Grid.Row="0" Grid.Column="1" BorderThickness="0,0,1,1" BorderBrush="White" >
+						<TextBlock Text="PARTY LEADERS" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" VerticalAlignment="Center" />
+					</Frame>
+					<Frame Grid.Row="1" Grid.Column="1" BorderThickness="0,0,1,1" BorderBrush="White" >
+						<TextBlock Text="MAIN TANK" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" VerticalAlignment="Center" />
+					</Frame>
+					<Frame Grid.Row="2" Grid.Column="1" BorderThickness="0,0,1,1" BorderBrush="White" >
+						<TextBlock Text="REFRESH" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" VerticalAlignment="Center" />
+					</Frame>
+					<Frame Grid.Row="3" Grid.Column="1" BorderThickness="0,0,1,1" BorderBrush="White" >
+						<TextBlock Text="FEINT" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" VerticalAlignment="Center" />
+					</Frame>
+					<Frame Grid.Row="4" Grid.Column="1" BorderThickness="0,0,1,1" BorderBrush="White" >
+						<TextBlock Text="PERCEPTION" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" VerticalAlignment="Center" />
+					</Frame>
+					<Frame Grid.Row="5" Grid.Column="1" BorderThickness="0,0,1,1" BorderBrush="White" >
+						<TextBlock Text="SACRIFICE" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" VerticalAlignment="Center" />
+					</Frame>
+					<Frame Grid.Row="6" Grid.Column="1" BorderThickness="0,0,1,1" BorderBrush="White" >
+						<TextBlock Text="SHELL" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" VerticalAlignment="Center" />
+					</Frame>
+					<Frame Grid.Row="7" Grid.Column="1" BorderThickness="0,0,1,1" BorderBrush="White" >
+						<TextBlock Text="PROTECT" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" VerticalAlignment="Center" />
+					</Frame>
+					<Frame Grid.Row="8" Grid.Column="1" BorderThickness="0,0,1,1" BorderBrush="White" >
+						<TextBlock Text="BRAVERY" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" VerticalAlignment="Center" />
+					</Frame>
+					<Frame Grid.Row="9" Grid.Column="1" BorderThickness="0,0,1,0" BorderBrush="White" >
+						<TextBlock Text="SPIRIT DART" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" VerticalAlignment="Center" />
+					</Frame>
+					
+					<!--Content-->
+					<Frame Grid.Row="0" Grid.Column="2" BorderThickness="0,0,0,1" BorderBrush="White" Padding="10,0,0,0" >
+						<TextBlock Text="People" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" VerticalAlignment="Center" />
+					</Frame>
+					<Frame Grid.Row="1" Grid.Column="2" BorderThickness="0,0,0,1" BorderBrush="White" Padding="10,0,0,0" >
+						<TextBlock Text="People" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" VerticalAlignment="Center" />
+					</Frame>
+					<Frame Grid.Row="2" Grid.Column="2" BorderThickness="0,0,0,1" BorderBrush="White" Padding="10,0,0,0" >
+						<TextBlock Text="People" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" VerticalAlignment="Center" />
+					</Frame>
+					<Frame Grid.Row="3" Grid.Column="2" BorderThickness="0,0,0,1" BorderBrush="White" Padding="10,0,0,0" >
+						<TextBlock Text="People" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" VerticalAlignment="Center" />
+					</Frame>
+					<Frame Grid.Row="4" Grid.Column="2" BorderThickness="0,0,0,1" BorderBrush="White" Padding="10,0,0,0" >
+						<TextBlock Text="People" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" VerticalAlignment="Center" />
+					</Frame>
+					<Frame Grid.Row="5" Grid.Column="2" BorderThickness="0,0,0,1" BorderBrush="White" Padding="10,0,0,0" >
+						<TextBlock Text="People" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" VerticalAlignment="Center" />
+					</Frame>
+					<Frame Grid.Row="6" Grid.Column="2" BorderThickness="0,0,0,1" BorderBrush="White" Padding="10,0,0,0" >
+						<TextBlock Text="People" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" VerticalAlignment="Center" />
+					</Frame>
+					<Frame Grid.Row="7" Grid.Column="2" BorderThickness="0,0,0,1" BorderBrush="White" Padding="10,0,0,0" >
+						<TextBlock Text="People" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" VerticalAlignment="Center" />
+					</Frame>
+					<Frame Grid.Row="8" Grid.Column="2" BorderThickness="0,0,0,1" BorderBrush="White" Padding="10,0,0,0" >
+						<TextBlock Text="People" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" VerticalAlignment="Center" />
+					</Frame>
+					<Frame Grid.Row="9" Grid.Column="2" Padding="10,0,0,0" >
+						<TextBlock Text="People" FontFamily="../Assets/Fonts/Raleway Regular.ttf#Raleway" VerticalAlignment="Center" />
+					</Frame>
+				</Grid>
+			</Grid>
+
+		</ScrollViewer>
+	</Grid>
+</Page>
